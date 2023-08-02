@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap");
+
+/* Global CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #1a1a1a;
+}
+.container {
+  width: 1020px;
+  margin: auto;
+}
+
+
+/* Header */
+header {
+  height: 100vh;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -999;
+}
+.background__video:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #1a1a1ab5;
+}
+
+
+/* ==================== Navigation Star ==================== */
+nav {
+  padding: 1.5em 5em;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #1a1a1af5;
+}
+nav .logo {
+  width: 120px;
+}
+nav .logo img {
+  max-width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  margin: 1em;
+  font-size: 14px;
+  /* font-weight: 400; */
+  color: #ffffff;
+}
+nav ul li a.active {
+  color: #27ad60;
+  font-weight: 700;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #27ad60;
+}
+/* Hamberger */
+.hamberger {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+/* ==================== Navigation End ==================== */
+
+
+
+/* ==================== Hero Star ==================== */
+header .header__content {
+  text-align: center;
+  padding-top: 200px;
+  color: #ffffff;
+}
+header .header__content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+header .header__content p {
+  font-size: 1.2rem;
+}
+header .header__content button {
+  padding: 1rem 2rem;
+  margin-top: 2.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  color: #fff;
+  background-color: #27ad60;
+}
+/* ==================== Hero End ==================== */
+
+
+
+
+
+
+/* Main */
+main {
+  background-color: #fff;
+}
+main section {
+  padding: 8em 0 5em;
+}
+section .heading {
+  font-size: 2rem;
+  font-weight: 700;
+}
+/* ====================  Section About Star ====================  */
+.section__about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* img */
+.section__about .about__img {
+  width: 550px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.section__about .about__img img {
+  max-width: 100%;
+}
+/* description */
+.section__about .about__description {
+  max-width: 500px;
+  padding-left: 5rem;
+}
+.section__about .about__description .description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  margin: 1em 0 2.5em;
+  width: 80%;
+}
+.section__about .about__description .desc_op {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  margin: 1em 0 2.5em;
+  width: 80%;
+}
+/* Item */
+.section__about .about__description .item .col {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  margin: 1.5em 0;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.section__about .about__description .item .col .col_2{
+  list-style: none;
+}
+.section__about .about__description .item .col img {
+  width: 35px;
+  margin-right: 1em;
+}
+/* ==================== Section About End ====================  */
+
+
+
+
+/* ==================== Section features Star ==================== */
+.section__features {
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.section__features .features__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 3em 0;
+}
+.section__features .features__content .item__image {
+  width: 100px;
+  margin: 0 auto 0.8em;
+}
+.section__features .features__content .item__image img {
+  max-width: 100%;
+}
+.section__features .features__content .item__description p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 0.2em;
+  width: 80%;
+  margin: auto;
+}
+/* ==================== Section features End ==================== */
+
+
+
+
+/* ==================== Section courses Star ====================*/
+.section__courses h2 {
+  text-align: center;
+  padding-bottom: 1em;
+}
+.section__courses .features__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__courses .features__content .featur__card {
+  max-width: 270px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.section__courses .features__content .featur__card:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+.section__courses .features__content .featur__card img {
+  width: 100%;
+}
+.section__courses .features__content .featur__card .content__card {
+  padding: 0.8em 2em 1.5em;
+}
+/* .section__courses .features__content .featur__card .content__card:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+} */
+.section__courses .features__content .featur__card .description p {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.4em 0 1em;
+  border-bottom: 2px solid #cfcfcf;
+}
+.section__courses .features__content .featur__card .schedule {
+  text-align: center;
+  padding: 1em 0 2em;
+}
+.section__courses .features__content .featur__card button {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  padding: 0.8em;
+  background-color: #27ad60;
+  color: #fff;
+  font-weight: 700;
+}
+.section__courses .features__content .featur__card button:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+/* ==================== Section Courses End ====================*/
+/* ==================== Section Testimonial Star ====================*/
+.section__client {
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.section__client .client__profil {
+  padding: 2em 0 3em;
+}
+.section__client .client__profil img {
+  margin: 0 1.5em;
+  width: 100px;
+}
+.section__client .client__profil img:nth-child(3) {
+  width: 110px;
+}
+.section__client .client__description {
+  max-width: 35%;
+  margin: 1em auto;
+  font-family: "Montserrat", sans-serif;
+}
+/* ==================== Section Testimonial End ==================== */
+/* ==================== Section Subscribe Star ==================== */
+.section__subscribe {
+  text-align: center;
+}
+.section__subscribe p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+.section__subscribe h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0.2em 0 1em;
+}
+.section__subscribe button {
+  padding: 1em 3.5em;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  background-color: #27ad60;
+}
+.section__subscribe button:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+/* ==================== Section Subscribe End ==================== */
+/* ==================== Footer Star ==================== */
+footer {
+  padding: 8em 0 0.6em;
+  background-color: #f1f1f1;
+}
+footer .link {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5em;
+}
+footer .link ul {
+  list-style: none;
+  margin: 1em 0;
+}
+footer .link ul li {
+  margin: 0.5em 0;
+}
+footer .copyright {
+  text-align: center;
+  padding: 1em 0 0;
+  border-top: 1.5px solid #1a1a1a;
+}
+/* ==================== Footer End ==================== */
+
+/* ==================== Responsif ==================== */
+@media screen and (max-width: 1010px) {
+  .container {
+    max-width: 800px;
+  }
+  nav {
+    padding: 1.5em 5em;
+  }
+
+  footer .link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    text-align: center;
+  }
+  footer .link .item__commuinity {
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 700px;
+  }
+  nav {
+    padding: 1.5em 2em;
+  }
+  header .header__content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+  }
+  header .header__content p {
+    font-size: 1rem;
+  }
+  header .header__content button {
+    padding: 0.8rem 2rem;
+    margin-top: 2.5rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+  }
+
+  main section h2.heading {
+    font-size: 1rem;
+  }
+  /*  */
+  .section__about .about__img {
+    width: 500px;
+    border-radius: 20px;
+  }
+  .section__about .about__description {
+    max-width: 300px;
+    padding-left: 2rem;
+  }
+  .section__about .about__description .description {
+    font-size: 0.8rem;
+    margin: 0.8em 0 1.5em;
+  }
+  .section__about .about__description .item .col {
+    font-size: 0.8rem;
+  }
+  .section__about .about__description .item .col img {
+    width: 25px;
+  }
+
+  /*  */
+  .section__features .features__content .item__description p {
+    width: 90%;
+  }
+
+  /*  */
+  .section__courses .features__content .featur__card {
+    max-width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  footer .link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 500px;
+    text-align: center;
+  }
+  footer .link .item__commuinity {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  nav {
+    padding: 1.5em 8em;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1af5;
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    display: block;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    margin: 2.3em 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+  nav ul.show {
+    left: 0;
+  }
+  .hamberger {
+    display: block;
+  }
+
+  .container {
+    max-width: 500px;
+  }
+
+  /*  */
+  .section__about {
+    flex-direction: column;
+  }
+  .section__about .about__description {
+    max-width: 100%;
+    padding-left: 0rem;
+  }
+  .section__about .about__description .description {
+    font-size: 0.8rem;
+    margin: 0.8em 0 1.5em;
+    width: 100%;
+  }
+
+  /*  */
+  .section__features .features__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section__features .features__content .item__image {
+    width: 80px;
+  }
+
+  /*  */
+  .section__courses .features__content {
+    flex-direction: column;
+  }
+  .section__courses .features__content .featur__card {
+    margin: 2em auto;
+  }
+  .section__features .features__content .item__description p {
+    width: 90%;
+  }
+
+  /*  */
+  .section__client .client__profil {
+    padding: 1em 0 2em;
+  }
+  .section__client .client__profil img {
+    margin: 0 1.5em;
+    width: 100px;
+  }
+  .section__client .client__profil img:nth-child(3) {
+    width: 110px;
+  }
+  .section__client .client__profil img:nth-child(1),
+  .section__client .client__profil img:nth-child(6),
+  .section__client .client__profil img:nth-child(5) {
+    display: none;
+  }
+  .section__client .client__description {
+    max-width: 80%;
+  }
+
+  footer .link {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2.5em;
+  }
+}
+@media screen and (max-width: 540px) {
+  .container {
+    max-width: 100%;
+    padding: 0 5%;
+  }
+  nav {
+    width: 100%;
+    padding: 1em 5%;
+  }
+  main section h2.heading {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  /*  */
+  header .header__content h1 {
+    font-size: 2rem;
+  }
+  header .header__content p {
+    font-size: 0.8rem;
+  }
+  header .header__content button {
+    padding: 0.5rem 1.5rem;
+  }
+
+  /*  */
+  .section__about {
+    padding-top: 3em;
+  }
+  .section__about .about__img {
+    width: 300px;
+  }
+  .section__about .about__description {
+    max-width: 400px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  /*  */
+  .section__features {
+    padding: 3em 0 0;
+  }
+  .section__features .features__content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2em 0;
+  }
+  .section__features .features__content .item__image {
+    width: 60px;
+  }
+
+  /*  */
+  .section__courses {
+    padding: 2em 0;
+  }
+
+  /*  */
+  .section__client {
+    padding: 2em 0;
+  }
+  .section__client .client__profil img:nth-child(2),
+  .section__client .client__profil img:nth-child(4) {
+    display: none;
+  }
+
+  /*  */
+  .section__subscribe h3 {
+    font-size: 1.5em;
+  }
+  .section__subscribe button {
+    padding: 0.5rem 1.5rem;
+  }
+
+  /*  */
+  footer {
+    padding: 2em 0;
+  }
+  footer .link {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  footer .link .item__commuinity {
+    margin: 1em 0;
+  }
+}
+
